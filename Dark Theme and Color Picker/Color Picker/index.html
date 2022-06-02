@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- master style sheet -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- normalize style sheet -->
+    <link rel="stylesheet" href="css/Normalize.css">
+    <!-- google font work-sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <!-- color picker gradiant -->
+    <link rel="stylesheet" href="Coloris-main/dist/coloris.min.css" />
+    <script src="Coloris-main/dist/coloris.min.js"></script>
+    <!-- font awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <div class="work-flow">
+        <div class="header">
+            <h1>Color Picker</h1>
+        </div>
+        <div class="content">
+            <button class="select">PICK COLOR <i class="fa fa-eyedropper" style="font-size:15px;"></i></button>
+            <div class="gradiant">
+
+                <div class="labels">
+                    <label for="rgb">RGBA Value: </label>
+                    <label for="hexa">HEX Value:</label>
+                </div>
+                <div class="inputs">
+                    <div id="rgba">rgb(255,255,255,1)</div>
+                    <div class="clr-field" style="color: rgb(255, 255, 255);">
+                        <button aria-labelledby="clr-open-label"></button>
+                        <input id="hexa" type="text" class="coloris" value="#ffffff">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <a href="" class="about">About</a>
+            <a href="" class="feedback">Feedback</button>
+        </div>
+    </div>
+    <script src="js/master.js"></script>
+
+</body>
+
+
+</html>

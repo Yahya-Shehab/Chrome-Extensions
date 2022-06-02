@@ -1,0 +1,17 @@
+{
+  "name": "Screenshot and recorder",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "In progres Screenshot and recorder",
+  "permissions": ["scripting","storage","tabs","alarms","desktopCapture","downloads","activeTab"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Screenshot and Recorder Extension",
+    "default_popup": "index.html"
+  }
+}

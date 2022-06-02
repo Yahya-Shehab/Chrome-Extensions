@@ -1,0 +1,375 @@
+/* start variables */
+:root {
+  --main-backgroud-color: #ebedf2;
+  --main-border-color: #acb0f2;
+  --main-text-color: #4b50bf;
+  --main-hover-color: #231773;
+  --main-headrFooter-color: #6e30f2;
+  --main-transtion: 0.3s;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* start componant */
+.separetor {
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--main-border-color);
+  top: 45%;
+  left: 0;
+  z-index: 5;
+}
+.separetor::before {
+  content: "OR";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: var(--main-text-color);
+}
+a {
+  border: none;
+  text-decoration: none;
+}
+.wrong-input {
+  border: 1px solid red !important;
+}
+/* start for toggle between taps  */
+.selected {
+  background-color: var(--main-backgroud-color) !important;
+}
+.selected > * {
+  color: var(--main-hover-color) !important;
+}
+/* end for toggle between taps  */
+/* to disable sections  */
+/* .disable-direct {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.disable-timer {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  height: 110%;
+  width: 100%;
+  z-index: 1;
+  opacity: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+} */
+/* end to disable sections  */
+/* for toggle button */
+.to-right {
+  right: -20px !important;
+  left: 126px !important;
+}
+.to-left {
+  right: 126px !important;
+  left: 20px !important;
+}
+/* end for toggle button */
+
+/* end componant */
+/* end variables */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.work-place {
+  background-color: var(--main-backgroud-color);
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* start header */
+.header {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-headrFooter-color);
+}
+.header .logo {
+  color: white;
+  position: relative;
+}
+.header .logo::before,
+.header .logo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-border-color);
+}
+.header .logo::before {
+  top: -5px;
+  left: 0;
+}
+.header .logo::after {
+  bottom: -5px;
+  left: 0;
+}
+/* end header */
+/* start content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content .taps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .tab {
+  background-color: var(--main-headrFooter-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+.content .tab:hover {
+  background-color: var(--main-hover-color);
+}
+.content .tab:first-child {
+  width: 50%;
+}
+.content .tab:last-child {
+  flex: 1;
+}
+.content .tab p {
+  margin: 0px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 7px 0px;
+  width: 60%;
+}
+.content .main {
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+/*  ..start direct design  */
+.content .main .direct {
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .direct .toggle {
+  flex-basis: 50%;
+  border: 2px solid var(--main-border-color);
+  position: relative;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  transition: var(--main-transtion);
+}
+.content .direct .toggle:hover {
+  border: 2px solid var(--main-text-color);
+}
+.content .direct .toggle span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--main-transtion) linear;
+}
+.content .direct .toggle span:hover {
+  background-color: var(--main-hover-color);
+}
+.content .direct i {
+  flex: 1;
+  position: absolute;
+  font-size: 30px;
+}
+.content .direct i:first-child {
+  left: 35px;
+}
+.content .direct i:last-child {
+  right: 35px;
+}
+/*  ..start direct design  */
+/*  ..start timer design  */
+.content .main .timer {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  padding: 10px 0px;
+  position: relative;
+}
+.content .timer .input-field {
+  flex-basis: 80%;
+  display: flex;
+}
+.content .timer .input-field .labels {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .timer .input-field .input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .timer .input-field .input:first-child {
+  flex-basis: 50%;
+}
+.content .timer .input-field .input:last-child {
+  flex: 1;
+}
+.content .timer .input-field label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--main-hover-color);
+}
+.content .timer .input-field label:first-child {
+  flex-basis: 50%;
+}
+.content .timer .input-field label:last-child {
+  flex: 1;
+}
+.content .timer .input-field input {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border-top: 1px solid var(--main-border-color);
+}
+.content .timer .input-field input:focus {
+  border-top: 2px solid var(--main-border-color);
+}
+.content .timer .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .timer button {
+  margin-right: 10px;
+  border: none;
+  background-color: var(--main-text-color);
+  color: white;
+  transition: var(--main-transtion);
+  border-radius: 5px;
+  cursor: pointer;
+  flex-basis: 50%;
+}
+.content .timer button:hover {
+  background-color: var(--main-hover-color);
+}
+/* blacklist */
+.content .blacklist {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content .blacklist .all-added {
+  max-width: 100%;
+  max-height: 155px;
+  overflow-y: scroll;
+}
+.content .blacklist .all-added::-webkit-scrollbar {
+  width: 5px;
+}
+.content .blacklist .all-added::-webkit-scrollbar-track {
+  background-color: var(--main-border-color);
+}
+.content .blacklist .all-added::-webkit-scrollbar-thumb {
+  background-color: var(--main-headrFooter-color);
+  transition: var(--main-transtion);
+}
+.content .blacklist .all-added::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-hover-color);
+}
+.added-website {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-border-color);
+  margin: 3px 0px;
+}
+.added-website .url {
+  padding: 6px 5px;
+}
+.added-website button {
+  border: none;
+  color: white;
+  background-color: var(--main-text-color);
+  margin: 6px 5px;
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+.added-website button:hover {
+  background-color: var(--main-hover-color);
+}
+.content .blacklist .addtion-button {
+  border: none;
+  background-color: var(--main-text-color);
+  margin: 6px 5px;
+  padding: 5px 0px;
+  color: white;
+  cursor: pointer;
+  transition: var(--main-transtion);
+}
+.content .blacklist .addtion-button:hover {
+  background-color: var(--main-hover-color);
+}
+/* end content */
+/* start footer */
+.footer {
+  min-height: 35px;
+  background-color: var(--main-headrFooter-color);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.footer .links {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .links a {
+  color: white;
+}
+/* .footer button {
+  border: none;
+  background-color: var(--main-border-color);
+  color: black;
+  font-size: 20px;
+} */
+/* end footer */

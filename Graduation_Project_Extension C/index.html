@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="whole">
+    <div id="header">
+      <h1>Screenshot-Recorder</h1>
+    </div>
+    <div class="but-main">
+      <button id="screenshot" style="width: 50%">
+        <div class="main-ex">
+          <div class="image1">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+          <div>
+            <h2>Screenshot</h2>
+          </div>
+        </div>
+      </button>
+
+      <button id="recorder" style="width: 50%">
+        <div class="main-ex">
+          <div class="image1">
+            <i class="fa-solid fa-video"></i>
+          </div>
+
+          <div>
+            <h2>Recorder</h2>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div id="screenshot-extension">
+      <div class="sc-div1">
+        <button id="visible-part" class="but-sc-div1">
+          <div class="sc-img">
+            <i class="fa-solid fa-window-maximize"></i>
+          </div>
+          <div class="sc-img-text">
+            <h3>Visible Part</h3>
+          </div>
+        </button>
+        <button id="Selected-area" class="but-sc-div1">
+          <div class="sc-img">
+            <i class="fa-solid fa-vector-square"></i>
+          </div>
+          <div class="sc-img-text">
+            <h3>Selected Area</h3>
+          </div>
+        </button>
+      </div>
+
+      <div class="sc-div2">
+        <button id="screenshot-but">
+          <i class="fa-solid fa-images" id="screenshot-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="recorder-extension">
+      <div class="re-div1">
+        <button id="desktop" class="but-re-div1">
+          <div class="re-img">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <div class="re-img-text">
+            <h3>Desktop</h3>
+          </div>
+        </button>
+
+        <button id="this-tab" class="but-re-div1">
+          <div class="re-img">
+            <i class="fa-solid fa-window-maximize"></i>
+          </div>
+          <div class="re-img-text">
+            <h3>This Tab</h3>
+          </div>
+        </button>
+
+        <br>
+        <div class="re-setting">
+          <div class="re-row-set">
+            <span id="span-mic">Microphone</span>
+
+
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <i class="fa-solid fa-microphone-slash" id="off-mic"></i>
+            <i class="fa-solid fa-microphone" id="on-mic"></i>
+          </div>
+
+          <br>
+
+          <div class="re-row-set">
+            <span id="span-cam">Camera</span>
+
+
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <i class="fa-solid fa-camera-retro"></i>
+          </div>
+
+          <br>
+
+          <div class="re-row-set">
+            <form action="/action_page.php">
+              <label for="quality" id="setQuality">Set Quality</label>
+              <select name="storage" id="quality">
+                <option value="hd720p">HD 720p</option>
+                <option value="fhd1080p">FHD 1080p</option>
+
+              </select>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="re-div2">
+          <button class="video-but" id="start-but">
+            <i class="fa-solid fa-circle-play" id="start-icon"></i>
+          </button>
+
+          <button class="video-but" id="photo-but">
+            <i class="fa-solid fa-circle" id="photo-icon"></i>
+          </button>
+
+          <button class="video-but" id="stop-but">
+            <i class="fa-solid fa-stop" id="stop-icon"></i>
+          </button>
+
+          <button class="video-but" id="pause-but">
+            <i class="fa-solid fa-pause" id="pause-icon"></i>
+          </button>
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <hr />
+
+    <div class="footer">
+      <div class="save">
+        <form action="/action_page.php">
+          <label for="storage">Save To: </label>
+          <select name="storage" id="storage">
+            <option value="Choose-Storage">Choose Storage</option>
+            <option value="local">Local Storage</option>
+            <option value="Drive">Google Drive</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/master.js"></script>
+</body>
+
+</html>

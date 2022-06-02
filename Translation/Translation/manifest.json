@@ -1,0 +1,31 @@
+{
+   "name": "Translation Extension",
+   "version": "1.0",
+   "manifest_version": 3,
+   "description": "Translate any Word the User Want",
+   "action": {
+       "default_title": "I am a Translator",
+       "default_popup": "popup.html"
+   },
+   "permissions": [
+    "https://*/*",
+    "storage"
+   ],
+   "host_permissions": [
+    "http://*/*",
+    "*://*/*"
+  ],
+   "content_scripts":[
+     {
+       "matches":[
+         "<all_urls>"
+      ],
+      "js":[
+        "bundle.js"
+      ],
+      "css":[
+        "CssSt/tooltip.css"
+      ]
+     }
+   ]
+ }

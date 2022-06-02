@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Fredoka&family=Open+Sans:ital@1&display=swap');
+
+
+
+/*HTML and BODY GENERAL STYLING*/
+html,body{
+      font-family: Fredoka,monospace;
+      font-size: 1rem;
+      margin: 0;
+      /* min-height: 31.25rem;
+      width: 17rem; */
+      max-width: fit-content;
+      max-height: fit-content;
+      padding: 0;
+      color: #6E30F2;
+}
+
+/*HEADER STYLING*/
+h1{
+      font-family: Fredoka,monospace;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin: 0;
+      color: #231773;
+      text-align: center; /*by ahmad*/
+      /* margin-left:0.5rem; */
+}
+        /*THE CONTAINER*/
+.translation_container{
+      display: flex;
+      flex-direction: column;
+      border: 3px inset #4B50BF;
+      background-color: #EBEDF2;
+      background-image: linear-gradient(to bottom right, #EBEDF2, #4B50BF);
+      min-width: 280px; /*by ahmad*/
+      min-height: 365px; /*by ahmad*/
+      /* background-image: url(../images/page-not-found.png); */
+      /* background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat; */
+      
+      
+   
+}
+         /*HEADER DIV*/
+.translation_header{
+      display: flex;
+      margin-top:0.2rem ;
+      margin-bottom: 0.2rem;
+}
+
+       /*The Translation icon*/
+.fa{
+      font-size: 2rem;
+      margin-right: 0.2rem;
+}
+
+/*HISTORY AND BACK CONTAINER*/
+.hisback{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0.7rem;
+}
+
+/*BACK ARROW AND BACK BUTTON*/
+.arrow{
+      color: #6E30F2;
+      padding: 0.5rem;
+      border-bottom: 0.3rem solid #6E30F2;
+      margin-left: 0.2rem;
+      
+}
+
+/*MAKING THE LEFT ARROW*/
+.arrow_left{
+      border: solid #6E30F2;
+      border-width: 0 0.3rem 0.3rem 0;
+      display: inline-block;
+      padding: 0.2rem;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+}
+
+/*HISTORY ICON*/
+.fa-book-open-cover{
+      /* color: ; */
+}
+
+/*HISTORY BUTTON*/
+.book{
+      color:#EBEDF2;
+      padding: 0.5rem;
+      border-bottom: 0.3rem solid #EBEDF2;
+      margin-right: 0.2rem;
+      transition: 0.3s;
+      
+
+}
+
+/*HOVERING BUTTONS*/
+.back_button {
+      transition: 0.3s;
+}
+.back_button:hover button,.back_button:hover i{
+      color: #231773;
+      border-color: #231773;
+      font-size: 1.3rem;
+      transition: 0.3s;
+}
+
+.book:hover{
+      color: #231773;
+      border-color: #231773;
+      font-size: 1.32rem;
+}
+
+
+
+/*STYLING THE SOURCE LANGUAGE AND THE TARGET LANGUAGE*/
+
+/*FOR CONTAINER*/
+.legendSetting{
+      display: flex;
+      flex-direction: column;
+      color: #4B50BF;
+      font-weight: 500;
+      margin-top: .8rem;
+      justify-content: space-between;
+      justify-content: center; /*by ahmad*/
+      align-items: center; /*by ahmad*/
+}
+
+/*CONTAINER Settings for field set*/
+
+legend{
+      font-size: 1.3rem;
+      font-weight: 700;
+      /* margin-left: 0.4rem; */
+      color:#231773;
+      padding: 0 0.2rem;
+      transition: 0.3s;
+}
+legend:hover{
+      cursor: pointer;
+      color:#3013e9;
+      font-size:1.4;
+      transition: 0.3s;
+}
+
+/*LABELS*/
+label{
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #231773;
+}
+
+fieldset{
+      /* display: flex; */
+      justify-content: center; /*by ahmad*/
+      align-items: center; /*by ahmad*/
+      flex-direction: column; /*by ahmad*/
+      border-color: #4B50BF;
+      border-radius: 1rem;
+      border-width: 0.4rem;
+      border-style: solid;
+      width: 14rem;
+      gap: 10px; /*by ahmad*/
+}
+
+
+/*FOR SOURCE AND TARGET SELECT TAGS*/
+.source,.target{
+      width: 11rem;
+      color :#EBEDF2;
+      text-align: center;
+      font-weight: 400;
+      background-color: #6E30F2;
+      border-radius: 0.6rem;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      padding: 0.3rem 0.3rem;
+}
+/* div.select-selected:hover{
+      background-color: #5415db;
+      transition: 0.3s;
+} */
+
+/*SOURCE GENERAL CONTAINER*/
+.sourcelan{
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+}
+
+.source-lang-dropdown,
+.target-lang-dropdown{
+      animation:typing 1s steps(19);
+      background: #6E30F2;/*var(--inner-bg-color)*/
+      border-color:#6E30F2 ;/*var(--inner-border-color)*/
+      border-radius: .3rem;
+      color:#EBEDF2 ;/*var(--inner-font-color)*/
+      cursor: pointer;
+      font: 1.2rem var(--font-family);
+      height: 2rem;
+      /* outline: none; */
+      width: 14.325rem;
+
+
+}
+
+
+/*TARGET GENERAL CONTAINER*/
+/* .targetlan{
+      margin-bottom: 0.8rem;
+} */
+
+/*STYLING OPTIONS*/
+/* .sourcelan {
+      position: relative;
+} */
+
+/* .sourcelan select {
+      display: none; hide original SELECT element:
+} */
+
+/* .targetlan {
+      position: relative;
+} */
+
+/* .targetlan select {
+      display: none; /*hide original SELECT element: */
+/* }  */
+
+/* .select-selected {
+      background-color: #6E30F2;
+      border-radius: 0.3rem;
+      
+} */
+
+/* .select-selected:after {
+      position: absolute;
+      content: ""; */
+      /* top: 14px; */
+      /* bottom: 2px; */
+      /* margin-top: 0.4rem;
+      right: 10px;
+      width: 0;
+      height: 0;
+      text-align: center;
+      border: 0.35rem solid transparent;
+      border-color: #fff transparent transparent transparent; */
+/* } */
+
+/* .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      /* margin-bottom: 3rem; */
+/* } */ 
+/* .scrollable{
+      overflow: auto;
+      height: 80px; /* adjust height depending on number of options to display */
+      /* border: 1px silver solid;
+}
+.scrollable select{
+      border: none;
+} */ 
+
+/* .select-items div,.select-selected {
+      color: #EBEDF2;
+      padding: 0.5rem 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.3rem;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      
+} */
+
+/* .select-items {
+      position: absolute;
+      background-color: #6E30F2;
+      border-radius: 0.3rem;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+} */
+
+/* .select-hide {
+      display: none;
+} */
+
+/* .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/*CEHCKBOX AND TEXT FIELD*/
+.key_word{
+      margin-top: 1.5rem;
+}
+
+/*CHECKBOX*/
+
+
+.checkKey{
+/* margin-top: 1rem; */
+/* margin-bottom: 0.2rem; */
+width:1.1rem;
+height:1.1rem;
+}
+
+.keytext{
+color:#231773;
+font-size: 1.15rem;
+font-weight:600;
+/* padding-bottom: 0.2rem; */
+}
+
+.checkspan{
+      display:flex;
+      flex-direction:row;
+      justify-content:left;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+}
+
+/*TEXT FIELD*/
+.shortcutKey{
+      width: 14.3125rem;
+      height: 1.8rem;
+      border-radius: 0.2rem;
+      border:none;
+      Background: linear-gradient(to  right, #EBEDF2, #686bbb); ;
+}
+
+.shortcutKey:hover{
+      background-color:#EBEDF2;
+      text-title: "Enter a Shourcut";
+}
+/*FOR IMG*/
+img{
+      width:16.5rem;
+      height: 10rem;
+}
+
+/*FOR BUTTONS*/
+.buttons{
+      display: flex;
+      margin-top: 1.5rem;
+      justify-content: space-around;
+      position: relative;
+}
+
+button{
+      cursor:pointer;
+      font-size: 1.25rem;
+      height: 2.4rem;
+      border: none;
+      /* border-radius: 10px; */
+      padding : 0.5rem 1.8rem;
+      background:none;
+      /* box-shadow: 0 0.3rem rgba(125, 31, 233, 0.65); */
+      
+}
+
+
+
+.help{
+      color:#EBEDF2;
+      position: absolute;
+      /* border-bottom: 0.2rem solid #EBEDF2; */
+      padding: 0.5rem;
+      margin-top: 7.7rem;
+      margin-left: 8rem;
+      transition: 0.3s;
+}
+.about{
+      color:#EBEDF2;
+      position: absolute;
+      /* border-bottom: 0.2rem solid #EBEDF2; */
+      padding: 0.5rem;
+      margin-right: 8rem;
+      margin-top: 7.7rem;  
+      transition: 0.3s;    
+}
+
+/*HOVERING BUTTONS*/
+.help:hover , .about:hover{
+      color: #6E30F2;
+      border-color: #6E30F2;
+      font-size: 1.3rem;
+      transition: 0.3s;
+}
+
+/* Tooltip */
+.tool_bubble{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: monospace;
+	visibility: hidden;
+	font-style: normal;
+	position: fixed;
+	padding: 12px;
+	margin: 1em 0 3em;
+	color: rgb(205, 205, 205);
+	background: #3f3e3e;
+	z-index: 1000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: -50%;
+}
+/* Autodetection
+.tooltip_bubble div{
+	color: rgb(172, 172, 172);
+} */
+
+
+
+

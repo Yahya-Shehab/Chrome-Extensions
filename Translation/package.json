@@ -1,0 +1,19 @@
+{
+  "name": "graduation_project_extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AboodW/Graduation_Project_Extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AboodW/Graduation_Project_Extension/issues"
+  },
+  "homepage": "https://github.com/AboodW/Graduation_Project_Extension#readme"
+}

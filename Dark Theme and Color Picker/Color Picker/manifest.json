@@ -1,0 +1,17 @@
+﻿{
+  "name": "Color Picker",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "In progres Color Picker Extension",
+  "permissions": ["scripting","storage","tabs","alarms"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Color Picker Extension",
+    "default_popup": "index.html"
+  }
+}

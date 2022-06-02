@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- master css file -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&family=Fira+Code:wght@300&family=Fredoka:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&family=Quicksand:wght@300;400;700&family=Roboto:wght@300;400;700&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet"> -->
+    <!-- cairo font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <!-- work sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Dark Theme</title>
+</head>
+
+<body style="min-width: fit-content; min-height: fit-content;">
+    <div class="work-place">
+        <div class="header">
+            <h1 class="logo">
+                Dark Theme
+            </h1>
+        </div>
+        <div class="content">
+            <div class="taps">
+                <div class="tab main-tap selected">
+                    <p>Main</p>
+                </div>
+                <div class="tab blacklist-tap">
+                    <p>White List</p>
+                </div>
+            </div>
+            <div class="main" style="display: flex;">
+                <div class="direct">
+                    <!-- <span id="disable-direct"></span> -->
+                    <i id="sun" class="fa-solid fa-sun" style="color: #acb0f2; transition: 0.3 linear;"></i>
+                    <div class="toggle" data-toggle="light">
+                        <span></span>
+                    </div>
+                    <i id="moon" class="fa-solid fa-moon" style="color: #acb0f2; transition: 0.3 linear;"></i>
+                </div>
+                <span class="separetor"></span>
+                <div class="timer">
+                    <!-- <span id="disable-timer" class="disable-timer"></span> -->
+                    <div class="input-field">
+                        <div class="labels">
+                            <label for="from">From</label>
+                            <label for="to"> To</label>
+                        </div>
+                        <div class="input">
+                            <input type="Time" id="from">
+                            <input type="Time" id="to">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="apply" title="double click to edit timer">Apply</button>
+                        <button id="reset" title="click to reset timer">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blacklist" style="display: none;">
+                <div class="all-added">
+                </div>
+                <button class="addtion-button" title="The dark theme will not be applied to the website you added">Add
+                    website to
+                    Blacklist</button>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- <div class="copyright">
+                <small>&copy; Copyright 2022</small>
+            </div> -->
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Feedback</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
